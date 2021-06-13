@@ -116,11 +116,9 @@ function elevarAlCubo(num) {
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
-  let nume= num;
-  let exponente= exponent;
   let res=1;
-  for( let i=0; i<=exponente-1; i++ ){
-    res*=nume; 
+  for( let i=0; i<=exponent-1; i++ ){
+    res*=num; 
   }
   return res;
 }
