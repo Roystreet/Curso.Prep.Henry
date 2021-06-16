@@ -4,13 +4,22 @@ function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
-  // Tu código:
+  if(x>y){
+    return x
+  } else if (y>x) {
+    return y
+    
+  }else{ return  x||o }
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if(edad>=18){
+    return "Allowed"
+  }else{ return "Not allowed"}
+
 }
   
 function conection(status) {
@@ -19,6 +28,12 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  if(status==1){
+    return "Online"
+  }else if(status==2){
+    return "Away"
+  }else { return "Offline"}
+  
 }
 
 function saludo(idioma) {
@@ -27,7 +42,21 @@ function saludo(idioma) {
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
-  // Tu código:
+  switch (idioma) {
+    case "aleman":
+      return "Guten Tag!";
+    break;
+    case "mandarin":
+      return "Ni Hao!";
+    break;
+    case "ingles":
+      return "Hello!"
+    break;
+    
+    default:
+      return "Hola!"
+      break;
+  }
 }
 
 function colors(color) {
@@ -89,20 +118,28 @@ function esPrimo(numero) {
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
-  //Escribe tu código aquí
+  if (valor==true && valor == 1) {
+    return "Soy verdadero";    
+  }else{
+    return "Soy falso";
+  }
 
 }
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  
+ 
 }
-
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
-  //Escribe tu código aquí
+  let numeroEntero= parseInt(numero);
+  if (numeroEntero.length>=3) {
+    return true;
+  }else{
+     return false
+  }
+
   
 }
 
