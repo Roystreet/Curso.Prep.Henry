@@ -2,19 +2,20 @@
 
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
-  // Tu código:
+  return array.shift()
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return array.pop()
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
-  // Tu código:
+  return array.length
 }
 
 
@@ -22,14 +23,19 @@ function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
   // y devuelve el array
-  // Tu código:
+  let  newArray=[];
+   for( let i=0; i<array.length; i++){
+      let resultado= array[i]+1;
+      newArray.push(resultado)
+   }
+   return newArray;
 }
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
-  // Tu código:
+  return array.push(elemento)
 }
 
 
@@ -37,7 +43,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
   // y devuelve el array
   // Pista: usa el método `.unshift`
-  // Tu código:
+  return array.unshift(elemento)
 }
 
 
@@ -46,14 +52,14 @@ function dePalabrasAFrase(palabras) {
   // Devuelve un string donde todas las palabras estén concatenadas
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
-  // Tu código:
+  return palabras.join(" ")
 }
 
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
-  // Tu código:
+  return 
 }
 
 
